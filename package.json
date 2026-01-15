@@ -1,0 +1,22 @@
+{
+  "name": "health-wellness",
+  "version": "1.0.0",
+  "description": "Health and wellness e-commerce platform",
+  "main": "index.js",
+  "scripts": {
+    "install-all": "pnpm install && cd client && pnpm install && cd ../server && pnpm install",
+    "dev": "concurrently \"cd server && pnpm run dev\" \"cd client && pnpm start\"",
+    "server": "cd server && pnpm run dev",
+    "client": "cd client && pnpm start",
+    "build": "cd client && pnpm run build",
+    "start": "cd server && pnpm start",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["mern", "ecommerce", "wellness"],
+  "author": "Kebaabetswe A. Sennelo",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
